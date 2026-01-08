@@ -22,15 +22,15 @@ HoneyBee is an **LLM-powered security testing tool** that generates intentionall
 
 ## 2. Core AI Functions
 
-Located in `honeybee/src/generators.py`:
+Located in [`honeybee/src/generators.py`](../honeybee/src/generators.py):
 
 | Function | Purpose |
 |----------|---------|
-| `generate_dockerfile()` | Creates Dockerfiles with security misconfigurations |
-| `generate_docker_compose()` | Creates multi-service Docker Compose configs |
-| `generate_nuclei()` | Creates Nuclei security scanning templates |
-| `extract_application_from_markdown()` | Parses blog posts to extract app names |
-| `generate_from_prompt()` | Generic LLM call wrapper with retry logic |
+| [`generate_dockerfile()`](../honeybee/src/generators.py#L33-L40) | Creates Dockerfiles with security misconfigurations |
+| [`generate_docker_compose()`](../honeybee/src/generators.py#L43-L50) | Creates multi-service Docker Compose configs |
+| [`generate_nuclei()`](../honeybee/src/generators.py#L53-L68) | Creates Nuclei security scanning templates |
+| [`extract_application_from_markdown()`](../honeybee/src/generators.py#L121-L133) | Parses blog posts to extract app names |
+| [`generate_from_prompt()`](../honeybee/src/generators.py#L8-L30) | Generic LLM call wrapper with retry logic |
 
 ---
 
@@ -40,13 +40,13 @@ Located in `honeybee/prompts/`:
 
 | Prompt File | Role |
 |-------------|------|
-| `generate_dockerfile.md` | DockerfileGenBot - containerization expert |
-| `generate_dockercompose.md` | DockerComposeGenBot - orchestration expert |
-| `write_nuclei_rule.md` | Nuclei AI expert (~68KB of instructions) |
-| `extract_application.md` | Cloud security specialist for parsing |
-| `analyze_misconfig.md` | Misconfiguration analysis |
-| `find_misconfig.md` | Misconfiguration discovery |
-| `list_misconfig.md` | Catalog generation |
+| [`generate_dockerfile.md`](../honeybee/prompts/generate_dockerfile.md) | DockerfileGenBot - containerization expert |
+| [`generate_dockercompose.md`](../honeybee/prompts/generate_dockercompose.md) | DockerComposeGenBot - orchestration expert |
+| [`write_nuclei_rule.md`](../honeybee/prompts/write_nuclei_rule.md) | Nuclei AI expert (~68KB of instructions) |
+| [`extract_application.md`](../honeybee/prompts/extract_application.md) | Cloud security specialist for parsing |
+| [`analyze_misconfig.md`](../honeybee/prompts/analyze_misconfig.md) | Misconfiguration analysis |
+| [`find_misconfig.md`](../honeybee/prompts/find_misconfig.md) | Misconfiguration discovery |
+| [`list_misconfig.md`](../honeybee/prompts/list_misconfig.md) | Catalog generation |
 
 ---
 
